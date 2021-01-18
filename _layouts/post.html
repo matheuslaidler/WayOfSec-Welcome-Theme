@@ -22,7 +22,7 @@ layout: default
       <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
         {{ page.date | date: date_format }}
       </time>
-    {%- endif -%} 
+    {%- endif -%}
     {%- if page.author -%}
       • {% for author in page.author %}
         <span itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -31,16 +31,7 @@ layout: default
       {% endfor %}
     {%- endif -%}
   </p>
-  
+
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
-
-
-{%- if site.hyvor_talk_website_id -%}
-  <div class="comments">
-    {%- include hyvor-talk-comments.html -%}
-  </div>
-{%- endif -%}
-
-
