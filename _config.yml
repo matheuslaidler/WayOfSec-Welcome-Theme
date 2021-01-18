@@ -1,39 +1,18 @@
-# Dependencies
-markdown:            kramdown
-highlighter:         rouge
+title: Acervo
+iconURL: assets/default-icon.png
+theme: jekyll-theme-leaf
 
-# Gems (for Jekyll 3.0)
-gems: [jekyll-paginate]
+# for a clean URL
+permalink: :slug
 
-# Permalinks
-#
-# Use of `relative_permalinks` ensures post links from the index work properly.
-permalinks:           pretty
+social:
+  twitter: matheuslaidler
+  github: matheuslaidler
 
-# Setup
-title:               SecLab
-tagline:             'tecnologia e hacking | by Matheus Laidler'
-description:         'Projeto de fins educativos sobre tecnologia e segurança da informação'
-url:                 http://matheuslaidler.github.io/
-baseurl:             /
-paginate:            7
+plugins:
+ - jekyll-feed
+ - jekyll-seo-tag
 
-# About/contact
-author:
-  name:              Matheus Laidler
-  url:               https://instagram.com/matheuslaidler
-  email:             none
-
-# Custom vars
-version:             2.0
-
-# Social Media
-github:				https://github.com/matheuslaidler
-youtube:			http://youtube.com/seclab
-disqus:             disqus
-
-# Theme Author (Please don't edit this line cause of MIT LICENSE rules)
-theme:
-  creator:			Rizky Ariestiyansyah
-  codename:			Naringu
-  link:             https://github.com/ariestiyansyah/naringu
+### comments & analytics
+hyvor_talk_website_id: 14
+google_analytics: UA-NNNNNNNN-N
