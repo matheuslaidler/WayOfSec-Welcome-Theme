@@ -21,7 +21,17 @@
     &:hover {
       text-decoration: none;
     }
-  
+
+  .ml {
+      @include relative-font-size(0.850);
+      letter-spacing: -2px;
+      margin-bottom: 0;
+      float: left;
+
+      &:hover {
+        text-decoration: none;
+      }
+
     @include media-query($on-mobile) {
       padding-right: 45px;
     }
@@ -50,11 +60,11 @@
     right: $spacing-unit / 2;
     border-radius: 5px;
     text-align: right;
-  
+
     .nav-trigger {
         display: none;
     }
-  
+
     .menu-icon {
       float: right;
       width: 36px;
@@ -62,12 +72,12 @@
       line-height: 0;
       padding-top: 10px;
       text-align: center;
-  
+
       > svg path {
         fill: $theme-color;
       }
     }
-  
+
     label[for="nav-trigger"] {
       display: block;
       float: right;
@@ -76,23 +86,23 @@
       z-index: 2;
       cursor: pointer;
     }
-  
+
     input ~ .trigger {
       clear: both;
       display: none;
     }
-  
+
     input:checked ~ .trigger {
       display: block;
       background:$header-color;
       border-radius:20px;
       padding:10px;
     }
-  
+
     .page-link {
       display: block;
       padding: 5px 10px;
-  
+
       // Gaps between nav items, but not on the last one
       &:not(:last-child) {
         margin-right: 0;
@@ -103,15 +113,15 @@
       }
 
     }
-  
-    @media screen and (min-width: $on-laptop) { 
+
+    @media screen and (min-width: $on-laptop) {
         flex:1;
         position: static;
         float: right;
         border: none;
         background-color: inherit;
         height:100%;
-  
+
         label[for="nav-trigger"] {
             display: none;
         }
