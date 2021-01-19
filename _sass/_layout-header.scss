@@ -21,21 +21,25 @@
     &:hover {
       text-decoration: none;
     }
-
-  .ml {
-      @include relative-font-size(0.850);
-      letter-spacing: -2px;
-      margin-bottom: 0;
-      float: left;
-
-      &:hover {
-        text-decoration: none;
-      }
-
     @include media-query($on-mobile) {
       padding-right: 45px;
     }
 }
+
+.ml {
+    @include relative-font-size(0.825);
+    letter-spacing: -2px;
+    margin-bottom: 0;
+    float: left;
+
+    &:hover {
+      text-decoration: none;
+    }
+    @include media-query($on-mobile) {
+      padding-right: 25px;
+    }
+}
+
 
 .site-icon {
     position: absolute;
