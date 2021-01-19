@@ -3,7 +3,7 @@ title: Sobre
 layout: page
 ---
 
-## **`<mark>Projeto - Acervo Pessoal</mark>`**
+## **`Projeto - Acervo Pessoal`**
 
  *Descrição>*<u> *"Acervo pessoal de estudo sobre tecnologia e segurança da informação."*</u>
 
