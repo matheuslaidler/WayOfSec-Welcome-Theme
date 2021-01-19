@@ -5,7 +5,7 @@ layout: page
 
 ## **`Projeto - Acervo Pessoal`**
 
- *Descrição>*<u> *"Acervo pessoal de estudo sobre tecnologia e segurança da informação."*</u>
+ *>*<u> *"Acervo pessoal de estudo sobre tecnologia e segurança da informação."*</u>
 
  A ideia do projeto vem de criar um portal sobre o mundo da  tecnologia e hacking, com fins acadêmicos, enquanto eu estudo desenvolvendo meus próprios materiais, e assim, ao compartilhar-los  acabo permitindo que qualquer entusiasta possa ter acesso. 
 
