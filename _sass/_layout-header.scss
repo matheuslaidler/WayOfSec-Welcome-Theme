@@ -12,21 +12,6 @@
     font-weight: 600;
 }
 
-.site-title {
-    @include relative-font-size(1.125);
-    letter-spacing: -1px;
-    margin-bottom: 0;
-    text-align: center;
-    float: none;
-
-    &:hover {
-      text-decoration: none;
-    }
-    @include media-query($on-mobile) {
-      padding-right: 30px;
-    }
-}
-
 .ml {
     @include relative-font-size(0.850);
     letter-spacing: -1px;
