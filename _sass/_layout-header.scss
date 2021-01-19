@@ -40,6 +40,22 @@
     }
 }
 
+.site-icon {
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    margin-top: -17px;
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    background: $content-color;
+    border-radius: 20%;
+    @include media-query($on-mobile) {
+      width: 15px;
+      height: 15px;
+      margin-top: -5px;
+    }
+}
 
 
 .site-nav {
