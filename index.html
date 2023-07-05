@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laidler's WebPage</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,600i" rel="stylesheet">
+</head>
+<body>
+<!-- menu mobile -->
+	<nav id="cssmenu">
+		<!-- Topo da página com a Logo -->
+		<table width="auto" border="0" align="center"> 
+			<tbody>
+			 <tr>  
+			  <td>
+				<a href="index.html" title="matheuslaidler" target="_parent">
+				  <img src="img/matheuslaidler.png" width="auto" height="35" border="0"/>
+				  <img src="img/underline.gif" width="5" height="20" border="0"/></a>
+				</td> 
+			  </tbody>
+			</table> 
+		<div class="menu-icon">
+		  <span class="bar"></span>
+		  <span class="bar"></span>
+		  <span class="bar"></span>
+		</div>
+		<ul>
+		  <li class="active"><a href="#">Home</a></li>
+		  <li><a href="https://github.com/matheuslaidler" target="_blank">Github</a></li>
+		  <li class="has-sub"><a href="#">Tools</a>
+			<ul>
+			  <li><a href="#" target="_blank">Cryptool</a></li>
+			  <li><a href="#" target="_blank">Resoluesh</a></li>
+			  <li><a href="#" target="_blank">ConDeX</a></li>
+			  <li><a href="#" target="_blank">CrackNet</a></li>
+			</ul>
+			</li>
+		  <li class="has-sub"><a href="#">Pages</a>
+			<ul>
+			  <li><a href="#road2tech.html" target="_blank">Road2Tech</a></li>
+			  <li><a href="#wayofsec.html" target="_blank">WayOfSec</a></li>
+			  <li><a href="#seclab.html" target="_blank">SecLab</a></li>
+			  <li><a href="https://matheuslaidler.gitbook.io/" target="_blank">Articles</a></li>
+			  <li><a href="https://matheuslaidler.github.io/" target="_blank">Sketches</a></li>
+			</ul>
+				</li>
+		  	<li class="has-sub"><a href="#">Donation</a>
+				<ul>
+			  	<li><a href="#github-sponsor" target="_blank">Github</a></li>
+			  	<li class="has-sub"><a href="#paypal">PayPal</a>
+				<ul><center><!-- paypal -->
+				<div id="donate-button-container">
+					<div id="donate-button" ></div>
+					<script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
+					<script>
+					PayPal.Donation.Button({
+					env:'production',
+					hosted_button_id:'55KGKSTYDTDCS',
+					image: {
+					src:'https://www.paypalobjects.com/pt_BR/BR/i/btn/btn_donateCC_LG.gif',
+					alt:'Faça doações com o botão do PayPal',
+					title:'PayPal - Doação segura !',
+					}
+					}).render('#donate-button');
+					</script>
+				</div>
+				</center></ul>
+				</li>
+				</ul>
+			</li>
+		<script>
+			// Get the hamburger icon and the menu list
+			const hamburger = document.querySelector('.menu-icon');
+			const menuList = document.querySelector('#cssmenu ul');
+
+			// Add event listener to the hamburger icon
+			hamburger.addEventListener('click', function() {
+			// Toggle the 'open' class to show/hide the menu
+			menuList.classList.toggle('open');
+			});
+		  </script>
+	  </nav>
+<!-- fim do menu -->
+    <div class="container">
+        <header>
+            <img src="img/logo.png" class="logo">
+        </header>
+        <section class="main">
+            <div class="video-bg">
+                <video autoplay loop muted>
+                    <source src="img/loop.webm" type="video/mp4">
+                </video>
+            </div>
+            <div class="corpo"></div>
+            <section class="detail">
+                <h1>Projeto Way Of Security</h1>
+                <p>Divulgação científica + Conteúdos acadêmicos</p>
+                <p>Um projeto educacional e sem fins lucrativos</p>
+                <p>Com foco em segurança da informação.</p>
+                <p class="online-detail">Matheus Laidler</p>
+            </section>
+            <a target="_blank" href="https://youtube.com/wayofsecurity" class="btn">Videos <i class="fa fa-comments" aria-hidden="true"></i></a>
+            <a href="#" class="btn2">WebPage <i class="fa fa-comments" aria-hidden="true"></i></a>
+        </section>
+    </div>
+</body>
+</html>

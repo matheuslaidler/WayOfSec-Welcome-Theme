@@ -1,0 +1,431 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #1c334d;
+  color: #fff;
+  font-family: "Open sans";
+  text-shadow: 1px 1px 1px #333;
+}
+
+.container {
+  max-width: 1024vh;
+  margin: auto;
+  padding: 0 0;
+}
+
+header {
+  position: relative;
+  top: 40px;
+  text-align: center;
+}
+
+.lang img {
+  width: 40vh;
+}
+
+.detail {
+  position: absolute;
+  width: 100%;
+  max-width: 350vh;
+  height: auto;
+  right: -1vh;
+  bottom: 8vh;
+  text-align: center;
+  padding: 2.5vh;
+}
+
+.logo {
+  display: block;
+  position: absolute;
+  top: 0.2vh;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.online-detail {
+
+  font-weight: 300;
+  color: #ccc;
+  font-style: italic;
+  font-size: 22px;
+}
+
+a {
+  color: #fff;
+  font-weight: 300;
+}
+
+.main {
+  position: relative;
+  width: 100%;
+  max-width: 1024vh;
+  height: auto;
+  background: #050608;
+  margin: auto;
+  margin-top: 0;
+}
+
+.corpo {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  background: url(../img/overlay.png) no-repeat bottom;
+  background-size: 218vh;
+  box-shadow: 0 0 15px #000;
+}
+
+.btn {
+  display: inline-block;
+  position: absolute;
+  bottom: -10vh;
+  z-index: -1;
+  background: #fff;
+  right: 33vh;
+  font-style: italic;
+  text-decoration: none;
+  font-size: 3.5vh;
+  color: #ba0707;
+  border-radius: 0 0 15px 15px;
+  padding: 4vh 6vh;
+  text-shadow: none;
+}
+
+.btn:hover {
+  color: #456ad0;
+  padding: 4.5vh 6.8vh;
+}
+
+.btn2 {
+  display: inline-block;
+  position: absolute;
+  bottom: -10vh;
+  z-index: -1;
+  background: #fff;
+  right: 1vh;
+  font-style: italic;
+  text-decoration: none;
+  font-size: 3.5vh;
+  color: #4ab5b5;
+  border-radius: 0 0 15px 15px;
+  padding: 4vh 6vh;
+  text-shadow: none;
+}
+
+.btn2:hover {
+  color: #456ad0;
+  padding: 4.5vh 6.8vh;
+}
+
+.video-bg {
+  position: absolute;
+  opacity: 0.1;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.video-bg video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+  /* Estilos para telas menores -> btns */
+@media (max-width: 980px) {
+	/* Esconde o menu */
+	.btn {
+		right: 27vh;
+		padding: 3vh 5vh;
+	}
+	.btn2 {
+	  	right: 0.1vh;
+	  	padding: 3vh 5vh;
+	}
+}
+
+/*MENU DE OPÇÕES*/
+/* Define o menu responsivo */
+/* estilo para telas maiores */
+#cssmenu {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 8.6vh;
+	background: linear-gradient(to bottom, #32323a, #141414);
+	border-bottom: 0.5vh solid #73ffe8; /*borda azul*/
+}
+
+ #cssmenu ul {
+	list-style: none;  /*tirando indicação - bolinha - de cada botão*/
+	display: flex;
+  }
+
+#cssmenu > ul > li {
+	position: relative;
+}
+
+#cssmenu a {
+	display: inline-block;
+	padding: 0 8vh;
+	line-height: 8vh;
+	color: #fff;
+	text-decoration: none;
+	font-size: 12px;
+	text-align: center;
+}
+
+/*arredondamento dos cantos superiores dos botoes usados*/
+#cssmenu > ul > li > a {
+	border-radius: 5px 5px 0 0;
+}
+
+#cssmenu > ul > li:hover:after { /*seta*/
+	content: '';
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	border-left: 10px solid transparent; 
+	border-right: 10px solid transparent;
+	border-bottom: 5px solid #73ffe8;
+	margin-left: -10px;
+}
+
+#cssmenu > ul > li.active > a {
+	box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.45);
+	background: linear-gradient(to bottom, #26262c 0%, rgba(0, 0, 0, 0.45) 100%);
+}
+
+#cssmenu > ul > li:hover > a {
+	background: linear-gradient(to bottom, #26262c 0%, #070707 100%);
+	box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.45);
+}
+
+#cssmenu .has-sub {
+	z-index: 1;
+}
+
+#cssmenu .has-sub:hover > ul {
+	display: block;
+}
+
+#cssmenu .has-sub ul {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	right: 0;
+	padding: 0;
+	margin: 0;
+}
+
+#cssmenu .has-sub ul li a {
+	display: block;
+	padding: 3.5vh; /*tamanho submenu*/
+	font-size: 11.5px;
+	line-height: 100%;
+	color: #fcfcfc;
+	background: #73ffe89f;
+}
+
+#cssmenu .has-sub ul li a:hover {
+	background: #73ffe8;
+}
+
+/* estilo para telas menores*/
+
+@media (max-width: 980px) {
+	#cssmenu {
+	  position: relative;
+	}
+  
+	#cssmenu > ul {
+	  max-height: 0;
+	  overflow: hidden;
+	  transition: max-height 0.35s ease-out;
+	}
+  
+	#cssmenu ul ul {
+	  max-height: none;
+	}
+  
+	#cssmenu .has-sub > a:after {
+	  content: "";
+	  position: absolute;
+	  top: 5vh;
+	  right: 2vh;
+	  border: 1vh solid transparent;
+	  border-top-color: #fff;
+	}
+  
+	#cssmenu .has-sub.active > a:after {
+	  top: 8vh;
+	  border: 1vh solid transparent;
+	  border-left-color: #fff;
+	}
+  
+	#cssmenu ul li {
+	  display: block;
+	  width: 100%;
+	}
+  
+	#cssmenu > ul > li > a {
+	  display: block;
+	  width: 100%;
+	  border-bottom: 1px solid #ebebeb;
+	  padding: 12px 20px;
+	  line-height: 1.7em;
+	}
+  
+	#cssmenu ul ul li a {
+	  padding: 12px 50px;
+	  line-height: 1.7em;
+	}
+  
+	#cssmenu .has-sub > a {
+	  position: relative;
+	}
+  
+	#cssmenu .has-sub.active > ul {
+	  max-height: 800vh;
+	}
+  
+	#cssmenu ul ul {
+	  transition: max-height 0.35s ease-out;
+	}
+  
+	#cssmenu .submenu-button {
+	  display: block;
+	  position: absolute;
+	  right: 0;
+	  top: 0;
+	  z-index: 1;
+	  background: #32323aa2;
+	  width: 20vh;
+	  height: 20vh;
+	  cursor: pointer;
+	}
+  
+	#cssmenu .submenu-button:after {
+	  content: "";
+	  display: block;
+	  position: absolute;
+	  right: 10vh;
+	  top: 18vh;
+	  border: 6vh solid transparent;
+	  border-top-color: #fff;
+	}
+  
+	#cssmenu .submenu-button.active:after {
+	  top: 20vh;
+	  border: 5vh solid transparent;
+	  border-left-color: #fff;
+	}
+  
+	#cssmenu ul ul .submenu-button {
+	  position: absolute;
+	  right: auto;
+	  top: 0;
+	}
+  }
+  
+  /* Estilos para telas menores -> Hamburguer */
+@media screen and (max-width: 980px) {
+	/* Esconde o menu */
+	#cssmenu ul {
+	  display: none;
+	}
+	#cssmenu > ul.open {
+		max-height: 500vh;
+	  }
+	
+	/* Estilos para o ícone do hambúrguer */
+	#cssmenu .menu-icon {
+	  cursor: pointer;
+	  display: inline-block;
+	  position: center; /*absolute p voltar ao canto*/
+	  width: 3vh;
+	  height: 3vh;
+	}
+	
+	#cssmenu .menu-icon .bar {
+	  display: block;
+	  width: 100%;
+	  height: 0.5vh;
+	  background-color: #73ffe8;
+	  border-radius: 3vh;
+	  transition: all 0.2s ease-in-out;
+	}
+	
+	#cssmenu .menu-icon .bar+.bar {
+	  margin-top: 0.45vh;
+	}
+	
+	/* Estilos para o menu aberto */
+	#cssmenu ul.open {
+	  display: block;
+	  position: absolute;
+	  top: 5.65vh;
+	  right: 0;
+	  left: 0;
+	  background-color: #141414cb;
+	  border-top: 4.5px solid #73ffe8;
+	  padding: 15vh;
+	  padding-top: 0;
+	  min-height: 97.5vh;
+	  z-index: 999;
+	}
+	
+	
+	#cssmenu ul.open li a {
+	  display: inline-flexbox;
+	  padding: 2.5vh;
+	  line-height: 15px;
+	  font-size: 13px;
+	  color: #fff;
+	  margin-top: 0;
+	}
+}
+
+/* estilo para telas menores que 280*/
+
+@media (max-width: 280px) {
+ 
+	#cssmenu > ul {
+	  max-height: 0;
+	  overflow: hidden;
+	  transition: max-height 0.35s ease-out;
+	}
+
+	#cssmenu ul li {
+	  display: block;
+	  width: 100%;
+	}
+  
+	#cssmenu > ul > li > a {
+	  display: block;
+	  width: 100%;
+	  border-bottom: 1px solid #ebebeb;
+	  padding: 12vh 20vh;
+	  line-height: 1.7em;
+	}
+  
+	#cssmenu ul ul li a {
+	  padding: 12px 50px;
+	  line-height: 1.7em;
+	}
+  
+  
+	#cssmenu ul ul {
+	  transition: max-height 0.35s ease-out;
+	}
+
+
+  }
